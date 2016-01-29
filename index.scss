@@ -1,0 +1,405 @@
+/************************* Sass Variables *************************/
+
+//Basic SASS Changes
+$h-color:#ffffff; //Header color
+$h2-color: #E8BF96; //Footer/Navigation Color
+$hover-color: #d46060; //Color for the Nav Color
+$bg-color: #000000; //Background Color
+$max-width: 100rem; //Max width off the content
+
+//SASS Functions
+
+//Variables (MONOCHROME)
+$colorbase: #ffcc66;
+$color-background: lighten($colorbase, 20);
+$color-dark: darken($colorbase, 20);
+$color-accent: saturate($colorbase, 20);
+$color-highlight: lighten(saturate($colorbase, 20), 20);
+
+/************************* SASS FUNCTIONS *************************/
+#monochrome {
+    .chip {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #000000;
+        display: inline-block;
+        background: $colorbase;
+    &:nth-of-type(2){
+            background: $color-background;
+        }//End of nth (2)
+        
+    &:nth-of-type(3){
+            background: $color-dark;
+        }//End of nth (3)
+        
+    &:nth-of-type(4){
+            background: $color-accent;
+        }//End of nth (4)
+        
+    &:nth-of-type(5){
+            background: $color-highlight;
+        }//End of nth (5)
+          
+    &:nth-of-type(2){
+            background: $color-background;
+        }//End of nth (2)
+        
+    &:nth-of-type(3){
+            background: $color-dark;
+        }//End of nth (3)
+        
+    &:nth-of-type(4){
+            background: $color-accent;
+        }//End of nth (4)
+        
+    &:nth-of-type(5){
+            background: $color-highlight;
+        }//End of nth (5)
+          
+    &:nth-of-type(6){
+            background: $color-background;
+        }//End of nth (6)
+        
+    &:nth-of-type(7){
+            background: $color-dark;
+        }//End of nth (7)
+        
+    &:nth-of-type(8){
+            background: $color-accent;
+        }//End of nth (8)
+        
+    &:nth-of-type(9){
+            background: $color-highlight;
+        }//End of nth (9)
+          
+    &:nth-of-type(10){
+            background: $color-background;
+        }//End of nth (10)
+        
+    &:nth-of-type(11){
+            background: $color-dark;
+        }//End of nth (11)
+        
+    &:nth-of-type(12){
+            background: $color-accent;
+        }//End of nth (12)
+        
+    &:nth-of-type(13){
+            background: $color-highlight;
+        }//End of nth (13)
+        
+    &:nth-of-type(14){
+            background: $color-background;
+        }//End of nth (14)
+        
+    &:nth-of-type(15){
+            background: $color-dark;
+        }//End of nth (15)
+        
+    &:nth-of-type(16){
+            background: $color-accent;
+        }//End of nth (16)
+        
+    &:nth-of-type(17){
+            background: $color-highlight;
+        }//End of nth (17)
+         
+    &:nth-of-type(18){
+            background: $color-background;
+        }//End of nth (18)
+        
+    &:nth-of-type(19){
+            background: $color-dark;
+        }//End of nth (19)
+        
+    &:nth-of-type(20){
+            background: $color-accent;
+        }//End of nth (20)
+        
+    &:nth-of-type(21){
+            background: $color-highlight;
+        }//End of nth (21)
+    
+    &:nth-of-type(22){
+            background: $color-background;
+        }//End of nth (22)
+        
+    &:nth-of-type(23){
+            background: $color-dark;
+        }//End of nth (23)
+        
+    &:nth-of-type(24){
+            background: $color-accent;
+        }//End of nth (24)
+        
+    &:nth-of-type(25){
+            background: $color-highlight;
+        }//End of nth (25)
+          
+    &:nth-of-type(26){
+            background: $color-background;
+        }//End of nth (26)
+        
+    &:nth-of-type(27){
+            background: $color-dark;
+        }//End of nth (27)
+        
+    &:nth-of-type(28){
+            background: $color-accent;
+        }//End of nth (28)
+        
+    &:nth-of-type(29){
+            background: $color-highlight;
+        }//End of nth (29)
+        
+    &:nth-of-type(30){
+            background: $color-accent;
+        }//End of nth (30)
+        
+    &:nth-of-type(31){
+            background: $color-highlight;
+        }//End of nth (31)
+    
+    &:nth-of-type(32){
+            background: $color-highlight;
+        }//End of nth (32)
+          
+    &:nth-of-type(33){
+            background: $color-background;
+        }//End of nth (33)
+        
+    &:nth-of-type(34){
+            background: $color-dark;
+        }//End of nth (34)
+        
+    &:nth-of-type(35){
+            background: $color-accent;
+        }//End of nth (35)
+        
+    &:nth-of-type(36){
+            background: $color-highlight;
+        }//End of nth (36)
+        
+    &:nth-of-type(37){
+            background: $color-accent;
+        }//End of nth (37)
+        
+    &:nth-of-type(38){
+            background: $color-highlight;
+        }//End of nth (38)
+        
+    &:nth-of-type(39){
+            background: $color-accent;
+        }//End of nth (39)
+        
+    &:nth-of-type(40){
+            background: $color-highlight;
+        }//End of nth (40)
+        
+    &:nth-of-type(41){
+            background: $color-accent;
+        }//End of nth (41)
+        
+    &:nth-of-type(42){
+            background: $color-highlight;
+        }//End of nth (42)
+        
+    }//End of CHIP
+    
+}//END MONOCHROME
+
+
+
+
+
+
+
+/************************* Body and Headers *************************/
+
+body {
+	width: 960px;
+	margin: 0px auto;
+	background-color:$bg-color;
+    background-attachment: fixed;
+	font-family: 'Copperplate', Copperplate Gothic Light, fantasy;
+}
+
+header{
+	width: 930px;
+	margin: 0px auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color:$h-color;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	color: $h2-color;	
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: $max-width;
+  margin: 0 auto;
+    text-align: center;
+}
+
+
+/******************************* Navigation *************************/
+
+#nav li {
+    text-decoration: none;    
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+   
+
+
+ a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+	color: $h2-color;
+    text-align:center;
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: $hover-color;
+}
+.active {
+    text-decoration: none;
+    list-style: none;
+}
+
+     }
+
+/******************************* Navigation Animation *************************/
+
+
+.nav_animation { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-50px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-50px); 
+        transform: translateY(-50px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+        transform: translateY(0); 
+    } 
+} 
+
+.nav_animation { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+/******************************* Keyframe for Opacity (Entire page) *************************/
+
+
+.fadeIn_everything {
+  -webkit-animation: FadeIn 2s;
+}
+
+@-webkit-keyframes FadeIn {
+  from  {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;}
+
+  90% {
+    opacity: 1;}
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);}
+}
+
+.fadeIn_everything {
+  -webkit-animation: FadeIn 2s;
+  -webkit-animation-delay: .1s;
+}
+
+
+
+
+ 
+
+
+/******************************* Content *************************/
+
+#content {
+    min-height: 400px;
+    width: 915px;
+    padding: 10px;
+    margin-left: 9%;
+
+}
+
+
+
+
+/******************************* Images *************************/
+
+img {
+    width: 100%;
+}
+
+
+#me_image {
+    display: inline-block;
+}
+
+
+
+/******************************* Footer *************************/
+footer {
+	width: 960px;
+	color: $h2-color;
+	margin-top: 40px;
+	text-align: center;
+	display: inline-block;
+	
+
+
+a {
+        color: $h-color;
+}
+
+    
+}

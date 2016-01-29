@@ -6,6 +6,8 @@ $h2-color: #E8BF96; //Footer/Navigation Color
 $hover-color: #d46060; //Color for the Nav Color
 $bg-color: #000000; //Background Color
 $max-width: 100rem; //Max width off the content
+$font-base: 12px; //for the @mixin function
+
 
 //SASS Functions
 
@@ -208,11 +210,30 @@ $color-highlight: lighten(saturate($colorbase, 20), 20);
     
 }//END MONOCHROME
 
+/************************* @Extend Sass *************************/
+
+%brand-font {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+
+h1 {
+    @extend %brand-font;
+    font-size: 2em;
+}
 
 
 
+/************************* @Mixin/Include Feat *************************/
 
+@mixin font-size_footer {
+  font-size: $font-base;
+}
 
+p {
+  @include font-size_footer;
+}
 
 /************************* Body and Headers *************************/
 
@@ -221,7 +242,7 @@ body {
 	margin: 0px auto;
 	background-color:$bg-color;
     background-attachment: fixed;
-	font-family: 'Copperplate', Copperplate Gothic Light, fantasy;
+	@extend %brand-font;
 }
 
 header{
@@ -287,28 +308,6 @@ h2 {
 
      }//end of nav li
 
-
-/******************************* @extend SASS *************************/
-.message {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
-}
-
-.success {
-  @extend .message;
-  border-color: green;
-}
-
-.error {
-  @extend .message;
-  border-color: red;
-}
-
-.warning {
-  @extend .message;
-  border-color: yellow;
-}
 
 /******************************* Navigation Animation *************************/
 

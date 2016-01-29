@@ -97,13 +97,24 @@
   #monochrome .chip:nth-of-type(42) {
     background: #ffeecc; }
 
+/************************* @Extend Sass *************************/
+h1, body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 2em; }
+
+/************************* @Mixin/Include Feat *************************/
+p {
+  font-size: 12px; }
+
 /************************* Body and Headers *************************/
 body {
   width: 960px;
   margin: 0px auto;
   background-color: #000000;
-  background-attachment: fixed;
-  font-family: 'Copperplate', Copperplate Gothic Light, fantasy; }
+  background-attachment: fixed; }
 
 header {
   width: 930px;
@@ -151,21 +162,6 @@ h2 {
   #nav li .active {
     text-decoration: none;
     list-style: none; }
-
-/******************************* @extend SASS *************************/
-.message, .success, .error, .warning {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
-
-.success {
-  border-color: green; }
-
-.error {
-  border-color: red; }
-
-.warning {
-  border-color: yellow; }
 
 /******************************* Navigation Animation *************************/
 .nav_animation {

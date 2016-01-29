@@ -1,0 +1,49 @@
+
+.main {
+		background-color: #FF8000;
+		font-size: 20px;
+		clear: both;
+		width: 100%;}
+.nav {
+		background-color: #FF8000;
+		font-size: 30px;
+		float:right;
+		width: 101%;
+		text-align: center;}
+		
+img {
+	visibility: hidden;
+}		
+
+
+#image {
+	width: 90%;
+	margin-right: 15px;
+}		
+
+.header {
+	background-image: url(_images/header_photo_3.jpg);
+	font-size: 20px;
+	text-align: center;
+	float: right;
+	width: 100.6%;}
+	
+.footer {
+	background-color: #FF8000;
+	font-size: 15px;
+	text-align: center;
+	float: right;
+	width: 100.6%;}
+
+/**********************************MEDIA PRINT**********************************/
+
+@media print {
+body {background-color: #FFFFFF;
+}
+img{display: none;
+}
+image{display: none;
+}
+h1 {color: black; 
+}
+}	

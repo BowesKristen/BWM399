@@ -265,27 +265,50 @@ h2 {
    
 
 
- a {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-	color: $h2-color;
-    text-align:center;
-    -webkit-transition: 1s;
-    transition: 1s;
+     a {
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        color: $h2-color;
+        text-align:center;
+        -webkit-transition: 1s;
+        transition: 1s;
 
-}
-a:hover {
-    text-decoration: none;
-    list-style: none;
-    color: $hover-color;
-}
-.active {
-    text-decoration: none;
-    list-style: none;
+    }
+    a:hover {
+        text-decoration: none;
+        list-style: none;
+        color: $hover-color;
+    }
+    .active {
+        text-decoration: none;
+        list-style: none;
+    }
+
+     }//end of nav li
+
+
+/******************************* @extend SASS *************************/
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
 }
 
-     }
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
 
 /******************************* Navigation Animation *************************/
 

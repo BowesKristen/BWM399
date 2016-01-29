@@ -152,6 +152,21 @@ h2 {
     text-decoration: none;
     list-style: none; }
 
+/******************************* @extend SASS *************************/
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
 /******************************* Navigation Animation *************************/
 .nav_animation {
   -webkit-animation-duration: 1s;
